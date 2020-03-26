@@ -36,6 +36,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         MenuArquivo = new javax.swing.JMenu();
         MenuArquivoSair = new javax.swing.JMenuItem();
         MenuEletronica = new javax.swing.JMenu();
+        MenuEletronicaIndutor1 = new javax.swing.JMenuItem();
         MenuEletrica = new javax.swing.JMenu();
         MenuAjuda = new javax.swing.JMenu();
         MenuAjudaHora = new javax.swing.JMenuItem();
@@ -61,6 +62,15 @@ public class FormPrincipal extends javax.swing.JFrame {
         MenuBarra.add(MenuArquivo);
 
         MenuEletronica.setText("Eletrônica");
+
+        MenuEletronicaIndutor1.setText("Indutor com núcleo de ar");
+        MenuEletronicaIndutor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuEletronicaIndutor1ActionPerformed(evt);
+            }
+        });
+        MenuEletronica.add(MenuEletronicaIndutor1);
+
         MenuBarra.add(MenuEletronica);
 
         MenuEletrica.setText("Elétrica");
@@ -136,6 +146,16 @@ public class FormPrincipal extends javax.swing.JFrame {
         
     }//GEN-LAST:event_MenuArquivoSairActionPerformed
 
+    private void MenuEletronicaIndutor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuEletronicaIndutor1ActionPerformed
+
+        FormIndutor1 form = new FormIndutor1();
+        form.setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
+        form.setLocationRelativeTo(null);
+        form.setResizable(false);
+        form.setVisible(true);        
+        
+    }//GEN-LAST:event_MenuEletronicaIndutor1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -184,6 +204,7 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuBar MenuBarra;
     private javax.swing.JMenu MenuEletrica;
     private javax.swing.JMenu MenuEletronica;
+    private javax.swing.JMenuItem MenuEletronicaIndutor1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
