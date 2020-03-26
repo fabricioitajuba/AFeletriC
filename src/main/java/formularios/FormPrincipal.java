@@ -6,6 +6,7 @@
 package formularios;
 
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -118,9 +119,7 @@ public class FormPrincipal extends javax.swing.JFrame {
 
     private void MenuAjudaHoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuAjudaHoraActionPerformed
 
-        //FormAjudaHora form = new FormAjudaHora(this,true);
         FormAjudaHora form = new FormAjudaHora();
-        //form.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE
         form.setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
         //form.setTitle("Hora e data atuais");
         form.setLocationRelativeTo(null);
@@ -132,7 +131,8 @@ public class FormPrincipal extends javax.swing.JFrame {
     private void MenuArquivoSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuArquivoSairActionPerformed
         
         //Sai do programa
-        dispose();
+        //dispose();
+        System.exit(0);
         
     }//GEN-LAST:event_MenuArquivoSairActionPerformed
 
